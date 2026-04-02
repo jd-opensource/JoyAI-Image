@@ -142,7 +142,7 @@ python inference.py \
 
 JoyAI-Image supports three spatial editing prompt patterns: **Object Move**, **Object Rotation**, and **Camera Control**. For the most stable behavior, we recommend following the prompt templates below as closely as possible.
 
-#### 1. Object Move
+#### 3.1 Object Move
 
 Use this pattern when you want to move a target object into a specified region.
 
@@ -164,7 +164,7 @@ Move the <object> into the red box and finally remove the red box.
 Move the apple into the red box and finally remove the red box.
 ```
 
-#### 2. Object Rotation
+#### 3.2 Object Rotation
 
 Use this pattern when you want to rotate an object to a specific canonical view.
 
@@ -198,7 +198,7 @@ Rotate the chair to show the front side view.
 Rotate the car to show the rear left side view.
 ```
 
-#### 3. Camera Control
+#### 3.3 Camera Control
 
 Use this pattern when you want to change only the camera viewpoint while keeping the 3D scene itself unchanged.
 
