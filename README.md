@@ -33,8 +33,10 @@ JoyAI-Image is a **unified multimodal foundation model** for image understanding
 |----------------------|--------------------------|-----------------------------------------------------------------------------|-----------------|
 | JoyAI-Image-Und  | Multimodal Understanding | A text–image understanding backbone that enables high-fidelity spatial reasoning and editing-aware perception. | 🤗[Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit/tree/main/JoyAI-Image-Und)              |
 | JoyAI-Image-Edit        | Image Editing            | An instruction-guided image editing model with precise and controllable spatial manipulation. | 🤗[Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit)            |
+| JoyAI-Image-Edit-Distilled      | Image-Editing            | Distilled version of JoyAI-Image-Edit for faster inference | To be released       |
 | JoyAI-Image-Edit-Plus       |  Multi-Image Editing      | An instruction-guided model that supports multi-image editing, enabling cross-image composition, consistency, and joint manipulation.  | To be released       |
 | JoyAI-Image     | Text-to-Image            | A high-quality text-to-image generation model with strong multi-view consistency. | To be released       |
+
 
 ## 🔍 Visual Overview
 
