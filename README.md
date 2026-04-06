@@ -12,6 +12,7 @@
 </div>
 
 ## 🔥🔥🔥 News!!
+* 2026.04.06: 🎉 The demo for spatial editing is released at [Demo](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space).
 * 2026.04.02: 🎉 We release the JoyAI-Image-Edit weights. Please Check at [Huggingface](https://huggingface.co/jdopensource/JoyAI-Image-Edit).
 
 
