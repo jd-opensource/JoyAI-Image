@@ -130,7 +130,7 @@ python inference.py \
   --output outputs/result.png \
   --seed 123 \
   --steps 30 \
-  --guidance-scale 5.0 \
+  --guidance-scale 4.0 \
   --basesize 1024
 ```
 
@@ -143,7 +143,7 @@ python inference.py \
 | `--image` | str | None | Input image path (required for editing, omit for T2I) |
 | `--output` | str | `example.png` | Output image path |
 | `--steps` | int | 50 | Denoising steps |
-| `--guidance-scale` | float | 5.0 | Classifier-free guidance scale |
+| `--guidance-scale` | float | 4.0 | Classifier-free guidance scale |
 | `--seed` | int | 42 | Random seed for reproducibility |
 | `--neg-prompt` | str | `""` | Negative prompt |
 | `--basesize` | int | 1024 | Bucket base size for input image resizing (256/512/768/1024) |
