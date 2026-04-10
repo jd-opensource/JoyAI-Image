@@ -287,5 +287,15 @@ https://github.com/user-attachments/assets/54cb2fcc-0646-44e9-a002-21a7228501f3
 
 JoyAI-Image is licensed under Apache 2.0. 
 
+## Acknowledgements
+
+This project builds upon and benefits from the following open-source repositories.
+
+* Wan2.1: https://github.com/Wan-Video/Wan2.1
+* HunyuanVideo: https://github.com/Tencent-Hunyuan/HunyuanVideo
+
+Please refer to the respective repositories for their licenses and citation guidelines.
+
+
 ## ☎️  We're Hiring!
 We are actively hiring Research Scientists, Engineers, and Interns to join us in building next-generation generative foundation models and bringing them into real-world applications. If you’re interested, please send your resume to: huanghaoyang.ocean@jd.com
