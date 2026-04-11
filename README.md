@@ -1,14 +1,15 @@
-# JoyAI-Image  
-Awakening Spatial Intelligence in Unified Multimodal Understanding and Generation
+<h1 align="center">JoyAI-Image<br><sub><sup>Awakening Spatial Intelligence in Unified Multimodal Understanding and Generation</sup></sub></h1>
 
+<div align="center">
 
+[![Report PDF](https://img.shields.io/badge/Report-PDF-red)](https://joyai-image.s3.cn-north-1.jdcloud-oss.com/JoyAI-Image.pdf)
+[![Project](https://img.shields.io/badge/Project-JoyAI--Image-333399)](https://github.com/jd-opensource/JoyAI-Image)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-JoyAI--Image--Edit-yellow)](https://huggingface.co/jdopensource/JoyAI-Image-Edit)&#160;
+[![ModelScope](https://img.shields.io/badge/%F0%9F%A4%96%20ModelScope-JoyAI--Image--Edit-624aff)](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit)&#160;
+[![Demo](https://img.shields.io/badge/%F0%9F%9A%80%20Demo-Spatial--Edit-orange)](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space)&#160;
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
-[Report PDF](https://joyai-image.s3.cn-north-1.jdcloud-oss.com/JoyAI-Image.pdf)
-[Project](https://github.com/jd-opensource/JoyAI-Image)
-[Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit) 
-[ModelScope](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit) 
-[Demo](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space) 
-[License](LICENSE)
+</div>
 
 
 
@@ -312,17 +313,9 @@ Move the camera.
 
 The first and third examples show point clouds with only a single given viewpoint. The second and fourth examples are augmented by [SpatialEdit](https://github.com/EasonXiao-888/SpatialEdit), which synthesizes richer spatial observations from the sparse input view.
 
-
-
 **Conditional-frames Based Video Generation:**
 
 Given the first frame, [SpatialEdit](https://github.com/EasonXiao-888/SpatialEdit) first generates the final frame of the video, and a video generation model then creates a smooth rotational transition between them while maintaining background consistency.
-
-
-
-
-
-
 
 #### 3.5 Demo Display
 
