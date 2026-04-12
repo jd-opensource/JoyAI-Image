@@ -36,7 +36,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--basesize', type=int, default=1024, help='Resize bucket base size for image editing inputs.')
     parser.add_argument('--rewrite-prompt', action='store_true')
     parser.add_argument('--config', help='Optional config path. Defaults to <ckpt-root>/infer_config.py.')
-    parser.add_argument('--rewrite-model', default='gpt-5')
+    parser.add_argument(
+        '--rewrite-model',
+        default='gpt-5',
+        help=(
+            'Model for prompt rewriting (default: gpt-5). '
+            'Supports any OpenAI-compatible model, e.g. MiniMax-M2.7. '
+            'Set MINIMAX_API_KEY to use MiniMax models automatically.'
+        ),
+    )
     parser.add_argument('--hsdp-shard-dim', type=int, help='Override config hsdp_shard_dim for multi-GPU FSDP inference.')
     return parser.parse_args()
 
