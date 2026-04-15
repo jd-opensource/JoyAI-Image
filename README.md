@@ -16,6 +16,7 @@
 
 ## 🔥🔥🔥 News!!
 
+- 2026.04.15: 🎉 We are excited to release the **OpenSpatial data engine** and the **OpenSpatial-3M dataset**! You can find the code on [GitHub](https://github.com/VINHYU/OpenSpatial) and the data on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial). If you find this project useful, please consider giving us a ⭐ to show your support!
 - 2026.04.11: 🎉 JoyAI-Image-Edit now supports Diffusers! Check out the integration and usage in [JoyAI-Image-Edit-Diffusers](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Diffusers).
 - 2026.04.10: 🎉 JoyAI-Image-Edit now supports ComfyUI! Check out the integration and usage in our [ComfyUI](https://github.com/jd-opensource/JoyAI-Image/tree/main/joyai_image_comfyui).
 - 2026.04.10: 🎉 We release the Spatial-Edit training dataset and benchmark: [JoyAI-Image-SpatialEdit](https://huggingface.co/datasets/jdopensource/JoyAI-Image-SpatialEdit) and [JoyAI-Image-SpatialEdit-Bench](https://huggingface.co/datasets/jdopensource/JoyAI-Image-SpatialEdit-Bench).If you find our work helpful, please consider giving our repository a star—your support is greatly appreciated.
@@ -31,7 +32,7 @@ JoyAI-Image Architecture
 ## 💎 Highlights
 
 - **Unified multimodal foundation**: one model family for understanding, generation, and editing through a shared MLLM-MMDiT interface.
-- **Practical data and training recipe**: a scalable pipeline with spatial understanding data ([OpenSpatial](https://github.com/VINHYU/OpenSpatial)), long-text rendering data, editing data ([SpatialEdit](https://github.com/EasonXiao-888/SpatialEdit)), and multi-stage optimization strategies.
+- **Practical data and training recipe**: a scalable pipeline with spatial understanding data ([Code](https://github.com/VINHYU/OpenSpatial), [Data](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)), long-text rendering data, editing data ([SpatialEdit](https://github.com/EasonXiao-888/SpatialEdit)), and multi-stage optimization strategies.
 - **Awakened spatial intelligence**: stronger spatial understanding, controllable spatial editing, and novel-view-assisted reasoning through a bidirectional loop between understanding and generation.
 - **Advanced visual generation**: strong long-text typography, layout fidelity, multi-view generation, and controllable editing with better preservation of scene structure.
 
