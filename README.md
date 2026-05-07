@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Report PDF](https://img.shields.io/badge/Report-PDF-red)](https://joyai-image.s3.cn-north-1.jdcloud-oss.com/JoyAI-Image.pdf)
+[![Report PDF](https://img.shields.io/badge/Report-PDF-red)](https://arxiv.org/abs/2605.04128)
 [![Project](https://img.shields.io/badge/Project-JoyAI--Image-333399)](https://github.com/jd-opensource/JoyAI-Image)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-JoyAI--Image--Edit-yellow)](https://huggingface.co/jdopensource/JoyAI-Image-Edit)&#160;
 [![ModelScope](https://img.shields.io/badge/%F0%9F%A4%96%20ModelScope-JoyAI--Image--Edit-624aff)](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit)&#160;
@@ -15,7 +15,7 @@
 
 
 ## 🔥🔥🔥 News!!
-
+- 2026.05.07: 🎉 Our technical report for Joy-Image is now available on [arXiv](https://arxiv.org/abs/2605.04128).
 - 2026.04.15: 🎉 We are excited to release the **OpenSpatial data engine** and the **OpenSpatial-3M dataset**! You can find the code on [GitHub](https://github.com/VINHYU/OpenSpatial) and the data on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial). If you find this project useful, please consider giving us a ⭐ to show your support!
 - 2026.04.11: 🎉 JoyAI-Image-Edit now supports Diffusers! Check out the integration and usage in [JoyAI-Image-Edit-Diffusers](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Diffusers).
 - 2026.04.10: 🎉 JoyAI-Image-Edit now supports ComfyUI! Check out the integration and usage in our [ComfyUI](https://github.com/jd-opensource/JoyAI-Image/tree/main/joyai_image_comfyui).
