@@ -15,6 +15,7 @@
 
 
 ## 🔥🔥🔥 News!!
+- 2026.05.08: 🎉 Diffusers has merged our [PR](https://github.com/huggingface/diffusers/pull/13444)! Using JoyAI-Image-Edit will be much easier now. See [Running with Diffusers](#diffusers) for details.
 - 2026.05.07: 🎉 Our technical report for Joy-Image is now available on [arXiv](https://arxiv.org/abs/2605.04128).
 - 2026.04.15: 🎉 We are excited to release the **OpenSpatial data engine** and the **OpenSpatial-3M dataset**! You can find the code on [GitHub](https://github.com/VINHYU/OpenSpatial) and the data on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial). If you find this project useful, please consider giving us a ⭐ to show your support!
 - 2026.04.11: 🎉 JoyAI-Image-Edit now supports Diffusers! Check out the integration and usage in [JoyAI-Image-Edit-Diffusers](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Diffusers).
