@@ -165,56 +165,38 @@ python inference.py \
 
 #### Diffusers
 
-##### Install the [Pull Request](https://github.com/huggingface/diffusers/pull/13444]) of JoyAI-Image-Edit of diffusers
+##### Install
 
 ```bash
-pip install git+https://github.com/huggingface/diffusers.git@refs/pull/13444/head
+pip install torch transformers torchvision
+pip install git+https://github.com/huggingface/diffusers.git
 ```
 
-##### Or install from this repo (PR will merge to diffusers main branch soon)
-
-```bash
-pip install torch==2.8 transformers==4.57.6 torchvision einops
-
-pip install git+https://github.com/Moran232/diffusers.git@joyimage_edit
-```
+> **Note**: `JoyImageEditPipeline` will be included in the next official diffusers release (>0.38.0). Until then, install from source as shown above.
 
 ##### Running with Diffusers
 
 ```python
 import torch
-from PIL import Image
-
 from diffusers import JoyImageEditPipeline
+from diffusers.utils import load_image
 
-pipeline = JoyImageEditPipeline.from_pretrained("jdopensource/JoyAI-Image-Edit-Diffusers")
-pipeline.to(torch.bfloat16)
+pipeline = JoyImageEditPipeline.from_pretrained(
+    "jdopensource/JoyAI-Image-Edit-Diffusers", torch_dtype=torch.bfloat16
+)
 pipeline.to("cuda")
-pipeline.set_progress_bar_config(disable=None)
-print("pipeline loaded")
 
-img_path = "./test_images/input.png"
-prompt = "Remove the construction structure from the top of the crane."
+image = load_image("./test_images/test_1.png")
+prompt = "Turn the plate blue."
 
-image = Image.open(img_path).convert("RGB")
-prompts = [f"<|im_start|>user\n<image>\n{prompt}<|im_end|>\n"]
-
-inputs = {
-    "image": image,
-    "prompt": prompts,
-    "generator": torch.manual_seed(0),
-    "num_inference_steps": 30,
-    "guidance_scale": 4.0,
-}
-
-print("run pipeline...")
-
-with torch.inference_mode():
-    output = pipeline(**inputs)
-    image = output.images[0]
-    image.save("joyai_image_edit_output.png")
-    print("image saved.")
-
+output = pipeline(
+    image=image,
+    prompt=prompt,
+    num_inference_steps=40,
+    guidance_scale=4.0,
+    generator=torch.Generator("cuda").manual_seed(0),
+).images[0]
+output.save("joyai_image_edit_output.png")
 ```
 
 ### 3. Spatial Editing Reference
