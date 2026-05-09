@@ -187,8 +187,10 @@ pipeline = JoyImageEditPipeline.from_pretrained(
 )
 pipeline.to("cuda")
 
-image = load_image("./test_images/test_1.png")
-prompt = "Turn the plate blue."
+img_path = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/diffusers/astronaut.jpg"
+image = load_image(img_path)
+
+prompt = "Add wings to the astronaut."
 
 output = pipeline(
     image=image,
