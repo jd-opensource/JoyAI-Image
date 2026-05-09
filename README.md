@@ -5,7 +5,7 @@
 [![Report PDF](https://img.shields.io/badge/Report-PDF-red)](https://arxiv.org/abs/2605.04128)
 [![Project](https://img.shields.io/badge/Project-JoyAI--Image-333399)](https://github.com/jd-opensource/JoyAI-Image)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-JoyAI--Image--Edit--Diffusers-yellow)](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Diffusers)&#160;
-[![ModelScope](https://img.shields.io/badge/%F0%9F%A4%96%20ModelScope-JoyAI--Image--Edit-624aff)](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit)&#160;
+[![ModelScope](https://img.shields.io/badge/%F0%9F%A4%96%20ModelScope-JoyAI--Image--Edit--Diffusers-624aff)](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit-Diffusers)&#160;
 [![Demo](https://img.shields.io/badge/%F0%9F%9A%80%20Demo-Spatial--Edit-orange)](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space)&#160;
 [![Demo](https://img.shields.io/badge/%F0%9F%9A%80%20Demo-General--Edit-orange)](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit)&#160;
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
