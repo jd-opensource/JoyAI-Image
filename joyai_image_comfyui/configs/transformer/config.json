@@ -1,0 +1,23 @@
+{
+  "_class_name": "JoyImageEditTransformer3DModel",
+  "_diffusers_version": "0.38.0.dev0",
+  "hidden_size": 4096,
+  "in_channels": 16,
+  "mlp_width_ratio": 4.0,
+  "num_attention_heads": 32,
+  "num_layers": 40,
+  "out_channels": 16,
+  "patch_size": [
+    1,
+    2,
+    2
+  ],
+  "rope_dim_list": [
+    16,
+    56,
+    56
+  ],
+  "rope_type": "rope",
+  "text_dim": 4096,
+  "theta": 10000
+}
