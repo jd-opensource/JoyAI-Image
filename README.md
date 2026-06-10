@@ -324,3 +324,17 @@ Please refer to the respective repositories for their licenses and citation guid
 ## ☎️  We're Hiring!
 
 We are actively hiring Research Scientists, Engineers, and Interns to join us in building next-generation generative foundation models and bringing them into real-world applications. If you’re interested, please send your resume to: [huanghaoyang.ocean@jd.com](mailto:huanghaoyang.ocean@jd.com)
+
+
+## Citation
+
+Thanks to cite the technical report:
+
+```text
+@article{song2026joyai,
+  title={JoyAI-Image: Awaking Spatial Intelligence in Unified Multimodal Understanding and Generation},
+  author={Song, Lin and Li, Wenbo and Ma, Guoqing and Tang, Wei and Wang, Bo and Zhang, Yuan and Yang, Yijun and Xiao, Yicheng and Liu, Jianhui and Zhang, Yanbing and others},
+  journal={arXiv preprint arXiv:2605.04128},
+  year={2026}
+}
+```
