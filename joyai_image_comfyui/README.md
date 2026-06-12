@@ -1,5 +1,12 @@
 # JoyAI-Image-Edit (Diffusers) for ComfyUI
 
+**Important** 
+
+We are working on the native integration of JoyAI-Image-Edit (rather than custom nodes). You can use the native nodes by installing ComfyUI from our PR: https://github.com/feice-huang/ComfyUI/tree/joyimage-edit-pr.
+Workflow: https://github.com/user-attachments/files/28871922/workflow_joyimage_edit.json
+The weights on Hugging Face have also been updated: https://huggingface.co/jdopensource/JoyAI-Image-Edit-ComfyUI
+
+
 ### Introduction
 
 This is a ComfyUI integration of JoyAI-Image-Edit that uses HuggingFace Diffusers as the backend. It follows the qwen-image-edit file-loading convention: each model component is picked from a single-file checkpoint inside the standard ComfyUI model folders (`diffusion_models/`, `text_encoders/`, `vae/`), with built-in manual CPU offload for low-VRAM environments.
