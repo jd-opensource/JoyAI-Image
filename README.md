@@ -5,6 +5,7 @@
 [![Report PDF](https://img.shields.io/badge/Report-PDF-red)](https://arxiv.org/abs/2605.04128)
 [![Project](https://img.shields.io/badge/Project-JoyAI--Image-333399)](https://github.com/jd-opensource/JoyAI-Image)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-JoyAI--Image--Edit--Diffusers-yellow)](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Diffusers)&#160;
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Checkpoint-JoyAI--Image--Edit--Plus--Diffusers-yellow)](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers)&#160;
 [![ModelScope](https://img.shields.io/badge/%F0%9F%A4%96%20ModelScope-JoyAI--Image--Edit--Diffusers-624aff)](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit-Diffusers)&#160;
 [![Demo](https://img.shields.io/badge/%F0%9F%9A%80%20Demo-Spatial--Edit-orange)](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space)&#160;
 [![Demo](https://img.shields.io/badge/%F0%9F%9A%80%20Demo-General--Edit-orange)](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit)&#160;
@@ -15,15 +16,15 @@
 
 
 ## 🔥🔥🔥 News!!
-- 2026.06.23: 🎉 We are excited to release the **JoyAI-Image-Edit-Plus**! Please Check at [Huggingface](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers).
+- 2026.06.23: 🎉 We are excited to release the **JoyAI-Image-Edit-Plus**! Please Check at [Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers).
 - 2026.05.08: 🎉 Diffusers has merged our [PR](https://github.com/huggingface/diffusers/pull/13444)! Using JoyAI-Image-Edit will be much easier now. See [Running with Diffusers](#diffusers) for details.
 - 2026.05.07: 🎉 Our technical report for Joy-Image is now available on [arXiv](https://arxiv.org/abs/2605.04128).
 - 2026.04.15: 🎉 We are excited to release the **OpenSpatial data engine** and the **OpenSpatial-3M dataset**! You can find the code on [GitHub](https://github.com/VINHYU/OpenSpatial) and the data on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial). If you find this project useful, please consider giving us a ⭐ to show your support!
 - 2026.04.11: 🎉 JoyAI-Image-Edit now supports Diffusers! Check out the integration and usage in [JoyAI-Image-Edit-Diffusers](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Diffusers).
 - 2026.04.10: 🎉 JoyAI-Image-Edit now supports ComfyUI! Check out the integration and usage in our [ComfyUI](https://github.com/jd-opensource/JoyAI-Image/tree/main/joyai_image_comfyui).
 - 2026.04.10: 🎉 We release the Spatial-Edit training dataset and benchmark: [JoyAI-Image-SpatialEdit](https://huggingface.co/datasets/jdopensource/JoyAI-Image-SpatialEdit) and [JoyAI-Image-SpatialEdit-Bench](https://huggingface.co/datasets/jdopensource/JoyAI-Image-SpatialEdit-Bench).If you find our work helpful, please consider giving our repository a star—your support is greatly appreciated.
-- 2026.04.06: 🎉 The demo for spatial editing is available at [Demo](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space), and the demo for general editing can be accessed at [Huggingface Demo](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit). 
-- 2026.04.02: 🎉 We release the JoyAI-Image-Edit weights. Please Check at [Huggingface](https://huggingface.co/jdopensource/JoyAI-Image-Edit) and [ModelScope](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit).
+- 2026.04.06: 🎉 The demo for spatial editing is available at [Demo](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit-Space), and the demo for general editing can be accessed at [Hugging Face Demo](https://huggingface.co/spaces/stevengrove/JoyAI-Image-Edit). 
+- 2026.04.02: 🎉 We release the JoyAI-Image-Edit weights. Please Check at [Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit) and [ModelScope](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit).
 
 ## 🐶 JoyAI-Image
 
@@ -46,9 +47,7 @@ JoyAI-Image Architecture
 | JoyAI-Image-Und            | Multimodal Understanding | A text–image understanding backbone that enables high-fidelity spatial reasoning and editing-aware perception.                        | 🤗[Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit/tree/main/JoyAI-Image-Und)                                                  |
 | JoyAI-Image-Edit           | Image Editing            | An instruction-guided image editing model with precise and controllable spatial manipulation.                                         | 🤗[Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit)🤖[ModelScope](https://modelscope.cn/models/jd-opensource/JoyAI-Image-Edit) |
 | JoyAI-Image-Edit-Distilled | Image-Editing            | Distilled version of JoyAI-Image-Edit for faster inference                                                                            | To be released                                                                                                                                    |
-| JoyAI-Image-Edit-Plus      | Multi-Image Editing      | An instruction-guided model that supports multi-image editing, enabling cross-image composition, consistency, and joint manipulation. | To be released                                                                                                                                    |
-| JoyAI-Image                | Text-to-Image            | A high-quality text-to-image generation model with strong multi-view consistency.                                                     | To be released                                                                                                                                    |
-
+| JoyAI-Image-Edit-Plus      | Multi-Image Editing      | An instruction-guided model that supports multi-image editing, enabling cross-image composition, consistency, and joint manipulation. | 🤗[Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers)                                                  |
 
 ## 🔍 Visual Overview
 
