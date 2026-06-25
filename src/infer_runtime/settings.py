@@ -5,6 +5,12 @@ from dataclasses import dataclass
 
 from infer_runtime.checkpoints import resolve_checkpoint_layout
 
+MINIMAX_BASE_URL = "https://api.minimax.io/v1"
+
+
+def _is_minimax_model(model: str) -> bool:
+    return model.lower().startswith("minimax")
+
 
 @dataclass
 class InferSettings:
@@ -30,11 +36,23 @@ def load_settings(
             f"Missing inference config: {default_config}. Pass --config explicitly to choose a config file."
         )
 
+    rewrite_model = rewrite_model or 'gpt-5'
+    api_key = os.environ.get('OPENAI_API_KEY')
+    base_url = os.environ.get('OPENAI_BASE_URL')
+
+    # Auto-configure MiniMax when a MiniMax model is requested.
+    # MINIMAX_API_KEY takes priority; base URL defaults to the MiniMax OpenAI-compatible endpoint.
+    if _is_minimax_model(rewrite_model):
+        minimax_key = os.environ.get('MINIMAX_API_KEY')
+        if minimax_key:
+            api_key = minimax_key
+        base_url = base_url or MINIMAX_BASE_URL
+
     return InferSettings(
         config_path=config_path or str(default_config),
         ckpt_path=str(layout.transformer_ckpt),
-        rewrite_model=rewrite_model or 'gpt-5',
-        openai_api_key=os.environ.get('OPENAI_API_KEY'),
-        openai_base_url=os.environ.get('OPENAI_BASE_URL'),
+        rewrite_model=rewrite_model,
+        openai_api_key=api_key,
+        openai_base_url=base_url,
         default_seed=default_seed,
     )
