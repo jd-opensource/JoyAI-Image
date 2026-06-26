@@ -1,22 +1,20 @@
 # Adapted from https://github.com/hao-ai-lab/FastVideo/tree/main/fastvideo/attention
 
-import os
-import sys
 import torch
 from einops import rearrange
 
-_FLASH_ATTN_IMPORT_ERROR = None
+from modules.models.flash_attn_utils import load_flash_attn
 
+# Flash Attention is loaded through the `kernels` library (pre-built FA2
+# binaries, no local compilation), with a transparent fallback to a source
+# build / local installation of `flash-attn`. See `flash_attn_utils.py`.
+_FLASH_ATTN_IMPORT_ERROR = None
 try:
-    # Check for Flash Attention 3 installation path
-    flash_attn3_path = os.getenv("FLASH_ATTN3_PATH")
-    if flash_attn3_path:
-        print(f"Using Flash Attention 3 from: {flash_attn3_path}")
-        sys.path.insert(0, flash_attn3_path)
-        from flash_attn_interface import flash_attn_varlen_func
-    else:
-        from flash_attn.flash_attn_interface import flash_attn_varlen_func
-except ImportError as exc:
+    _flash_attn_symbols = load_flash_attn()
+    flash_attn_varlen_func = _flash_attn_symbols.get("flash_attn_varlen_func")
+    if flash_attn_varlen_func is None:
+        raise ImportError("flash_attn is not available via `kernels` or a source build.")
+except Exception as exc:  # noqa: BLE001
     flash_attn_varlen_func = None
     _FLASH_ATTN_IMPORT_ERROR = exc
 

@@ -2,7 +2,7 @@ accelerate
 diffusers>=0.34.0
 einops
 fastapi
-flash-attn>=2.8.0
+kernels
 loguru
 openai
 packaging

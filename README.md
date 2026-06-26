@@ -90,7 +90,21 @@ conda activate joyai
 pip install -e .
 ```
 
-> **Note on Flash Attention**: `flash-attn >= 2.8.0` is listed as a dependency for best performance.
+> **Note on Flash Attention**: Flash Attention 3 is loaded through the [`kernels`](https://github.com/huggingface/kernels) library (installed by the command above), which fetches the pre-built [`kernels-community/flash-attn3`](https://huggingface.co/kernels-community/flash-attn3) binaries on first use — no local compilation required. Once resolved, the kernel is used exactly like the upstream `flash_attn_interface`, so behavior is identical.
+>
+> If your machine is not covered by the pre-built binaries, the code automatically falls back to a local Flash Attention 3 build. Build it from source (the `hopper` directory of [Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention)):
+>
+> ```bash
+> git clone https://github.com/Dao-AILab/flash-attention.git
+> cd flash-attention/hopper
+> python setup.py install
+> ```
+>
+> If your FA3 build lives outside the import path, point to it with the `FLASH_ATTN3_PATH` environment variable:
+>
+> ```bash
+> export FLASH_ATTN3_PATH=/path/to/flash-attention/hopper
+> ```
 
 #### Core Dependencies
 
@@ -100,7 +114,8 @@ pip install -e .
 | `torch`        | >= 2.8              | PyTorch               |
 | `transformers` | >= 4.57.0, < 4.58.0 | Text encoder          |
 | `diffusers`    | >= 0.34.0           | Pipeline utilities    |
-| `flash-attn`   | >= 2.8.0            | Fast attention kernel |
+| `kernels`      | latest              | Loads pre-built Flash Attention 3 |
+| `flash-attn`   | 3 (Hopper build)    | Fallback fast attention kernel |
 
 
 ### 2. Inference
