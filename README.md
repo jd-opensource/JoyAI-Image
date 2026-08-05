@@ -18,6 +18,7 @@
 
 
 ## 🔥🔥🔥 News!!
+- 2026.08.05: 🎉 We are excited to release the [**JoyAI-Video-Edit**](https://github.com/jd-opensource/JoyAI-Video-Edit), a real-time open-ended video editing model!
 - 2026.07.17: 🎉 [JoyAI-Image-Edit](https://huggingface.co/jdopensource/JoyAI-Image-Edit-ComfyUI) and [JoyAI-Image-Edit-Plus](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-ComfyUI) now natively support ComfyUI! You can now directly use our [workflow](https://huggingface.co/jdopensource/JoyAI-Image-Edit-ComfyUI/blob/main/workflow_joyimage_edit.json) in the latest version of ComfyUI without any additional dependencies!
 - 2026.06.23: 🎉 We are excited to release the **JoyAI-Image-Edit-Plus**! Please Check at [Hugging Face](https://huggingface.co/jdopensource/JoyAI-Image-Edit-Plus-Diffusers).
 - 2026.05.08: 🎉 Diffusers has merged our [PR](https://github.com/huggingface/diffusers/pull/13444)! Using JoyAI-Image-Edit will be much easier now. See [Running with Diffusers](#diffusers) for details.
