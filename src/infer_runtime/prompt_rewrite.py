@@ -80,7 +80,8 @@ def rewrite_prompt(
         {"role": "user", "content": user_content if image is not None else f"{SYSTEM_PROMPT}\n\nUser Input: {prompt}\n\nRewritten Prompt:"},
     ]
 
-    temperature = 1.0 if "gpt-5" in model.lower() else 0.0
+    # MiniMax requires temperature in (0.0, 1.0] — 0.0 is not accepted.
+    temperature = 1.0 if ("gpt-5" in model.lower() or model.lower().startswith("minimax")) else 0.0
     last_error = None
     for attempt in range(max_retries):
         try:
